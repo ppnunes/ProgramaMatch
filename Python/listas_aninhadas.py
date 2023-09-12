@@ -55,3 +55,24 @@ print([3, 4] in lista)
 print([3, 4] in lista[1])
 
 # true
+
+# para percorrer os itens de uma lista
+
+novalista = ["texto1", "texto2", "texto3", "texto4", "texto5"]
+
+# Indexing:
+lista[0]        # 'texto1'
+lista[-1]       # 'texto5'
+
+# Slicing:
+lista[2, 4]     # 'texto3', texto4'
+lista[:3]       # 'texto1', 'texto2', 'texto3'
+lista[2:]       # 'texto3', 'texto4', 'texto5'
+
+# Stride
+lista[0:4:2]    # 'texto1', 'texto3'
+
+# Podemos usar o stride para inverter uma lista:
+
+lista[::-1]     # é o mesmo que [0:0:-1] - o último índice vira o primeiro na sequencia de tras pra frente: ['text5', 'texto4', 'texto3', 'texto2', 'texto1']
+
