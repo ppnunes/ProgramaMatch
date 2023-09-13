@@ -60,4 +60,50 @@ dicionario1 = {}
 dicionario1["nome"] = "Ana"
 dicionario1["idade"] = 9
 dicionario1["turma"] = "1 serie"
+dicionario1
 
+# {'nome': 'Ana', 'idade': 9, 'turma': '1 serie'}
+
+# Utilizando a função dict:
+
+dicionario2 = dict(nome = "Ana",
+                    idade = 9,
+                    turma="1 serie")
+dicionario2
+
+# {'nome': 'Ana', 'idade': 9, 'turma': '1 serie'}
+
+
+## Unindo lista de chaves e valores com a função zip:
+
+chaves = ["nome", "idade", "turma"]
+valores = ["Ana", 9, "1 serie"]
+zip(chaves, valores)
+
+list(zip(chaves, valores))      # convertemos para uma lista
+
+
+## Assim como as listas, os dicionarios tambem permitem aninhamento. os dicionarios podem ser usados para criar estruturas e fazer buscas dentro delas.
+
+# Usando a indexação por chaves podemos fazer pesquisa d euma maneira facil.
+
+d['notas']['ingles'] = 'notavel'        # cria uma nova entrada em um dict aninhado
+
+o dicionario d contem:
+{'nome': 'Ana',
+'sobrenomes': ['Garcia', 'Fernandes'],
+'idade': 9
+'serie': '1 serie,
+'notas': {'matematica' : 'SS',
+          'portugues': 'SS',
+          'música': 'SS'}
+}
+
+d["nome"]
+# 'Ana'
+
+d["notas"]["musica"]        # acessa o dicionario aninhado
+# 'SS'
+
+d["sobrenomes"][0]          # acessa o primeiro elemento da lista aninhada
+# 'Garcia'
